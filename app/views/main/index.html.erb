@@ -1,0 +1,7 @@
+<h1>CMSC 631 Final Exam Request</h1>
+
+<%= form_tag("/send_exam", method: "post") do  %>
+  <%= label_tag(:email, "Enter your email address:") %>
+  <%= text_field_tag(:email) %>
+  <%= submit_tag("Request exam") %>
+<% end %>

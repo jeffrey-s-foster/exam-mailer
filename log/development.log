@@ -1,0 +1,129 @@
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:01:24 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 370ms (Views: 168.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:02:14 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:02:48 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 33.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:03:08 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:03:26 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:04:51 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 304ms (Views: 137.3ms)
+
+
+Started POST "/send_exam" for 127.0.0.1 at 2017-12-02 19:04:59 -0500
+Processing by MainController#send_exam as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wz8PcUWiGCHfKqS4fH9izylciJFSvXTvo1AgUtYlx6VVjnIEUrvw/B+f5kbKWP8smAts9h4PBG1Opqbj797vvw==", "email"=>"jeffrey.s.foster@gmail.com", "commit"=>"Request exam"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NameError (uninitialized constant MainController::SendExamMailer):
+  
+app/controllers/main_controller.rb:6:in `send_exam'
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:14:19 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 331ms (Views: 160.9ms)
+
+
+Started POST "/send_exam" for 127.0.0.1 at 2017-12-02 19:14:24 -0500
+Processing by MainController#send_exam as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tB/V6z7gwyHlyZMzyoQ+SU34dyKBvSttPzm4M0u932S6rqieKfkr/CV80c18o6Oq/K+TRc0PW+/Szz6Cckb3fg==", "email"=>"jeffrey.s.foster@gmail.com", "commit"=>"Request exam"}
+SendExamMailer#send_email: processed outbound mail in 13.9ms
+Completed 500 Internal Server Error in 212ms
+
+
+  
+ActionView::MissingTemplate (Missing template send_exam_mailer/send_email with "mailer". Searched in:
+  * "send_exam_mailer"
+):
+  
+app/mailers/send_exam_mailer.rb:5:in `send_email'
+app/controllers/main_controller.rb:6:in `send_exam'
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:15:47 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 22.1ms)
+
+
+Started POST "/send_exam" for 127.0.0.1 at 2017-12-02 19:15:52 -0500
+Processing by MainController#send_exam as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rzJP/oCOZn5ynyEB+snhRTktXpMPHcmGwYd4N+Dy5rFC4mEjBXkm0RS6QS7o09/ZRdWSlNWeGJnM4Beu5sNN8g==", "email"=>"jeffrey.s.foster@gmail.com", "commit"=>"Request exam"}
+SendExamMailer#send_email: processed outbound mail in 15.4ms
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::MissingTemplate (Missing template send_exam_mailer/send_email with "mailer". Searched in:
+  * "send_exam_mailer"
+):
+  
+app/mailers/send_exam_mailer.rb:5:in `send_email'
+app/controllers/main_controller.rb:6:in `send_exam'
+Started GET "/" for 127.0.0.1 at 2017-12-02 19:16:33 -0500
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 20.6ms)
+
+
+Started POST "/send_exam" for 127.0.0.1 at 2017-12-02 19:16:36 -0500
+Processing by MainController#send_exam as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ko5QfTUU/RMD0yqndRXv9S8vzp6n89bsxeWfe6c4ZPQkPy0IIg0VzsNmaFnDMnIWnngq+etBpm4oExnKnsNM7g==", "email"=>"jeffrey.s.foster@gmail.com", "commit"=>"Request exam"}
+  Rendering send_exam_mailer/send_exam.text.erb within layouts/mailer
+  Rendered send_exam_mailer/send_exam.text.erb within layouts/mailer (0.7ms)
+SendExamMailer#send_exam: processed outbound mail in 248.2ms
+Sent mail to jeffrey.s.foster@gmail.com (11.5ms)
+Date: Sat, 02 Dec 2017 19:16:36 -0500
+From: jfoster@cs.umd.edu
+To: jeffrey.s.foster@gmail.com
+Cc: jfoster@cs.umd.edu
+Message-ID: <5a234264c23f4_54a23fd61c2a329420958@Macintosh-2.fios-router.home.mail>
+Subject: CMSC 631 Final Exam
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Here is your final exam.
+
+Jeff
+
+
+  Rendering main/send_exam.html.erb within layouts/application
+  Rendered main/send_exam.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 281ms (Views: 11.3ms)
+
+
