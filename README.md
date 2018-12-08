@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web server to mail exams on request.
 
-Things you may want to cover:
+Things to change:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* app/mailers/send_exam_mailer.rb
+  - Change ADDR to your address and SUBJECT to the right subject.
+  - Probably add an attachment as well
