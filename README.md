@@ -4,6 +4,7 @@ Web server to mail exams on request.
 
 Things to change:
 
-* app/mailers/send_exam_mailer.rb
+* app/config/initializers
   - Change ADDR to your address and SUBJECT to the right subject.
-  - Probably add an attachment as well
+  - Change attachment_name as appropriate
+  - Change attachment_path as appropriate
