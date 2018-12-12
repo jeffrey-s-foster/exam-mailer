@@ -41,3 +41,4 @@ set :deploy_to, "/r/rails/comp-150AVS-final"
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 append :linked_files, 'config/database.yml', 'config/secrets.yml'
 append :linked_files, 'config/initializers/exam_mailer.rb'
+append :linked_files, 'f.txt'
