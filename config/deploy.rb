@@ -39,6 +39,6 @@ set :deploy_to, "/r/rails/comp-150AVS-final"
 # set :ssh_options, verify_host_key: :secure
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/master.key'
 append :linked_files, 'config/initializers/exam_mailer.rb'
 append :linked_files, 'f.txt'
